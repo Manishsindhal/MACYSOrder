@@ -1,6 +1,7 @@
-pipleline {
+pipeline {
   agent any
   
+  stages {
   stage("build") {
   
     steps {
@@ -15,6 +16,7 @@ pipleline {
       echo 'testing the application'
     }
     
+  }
   }
   
 }
