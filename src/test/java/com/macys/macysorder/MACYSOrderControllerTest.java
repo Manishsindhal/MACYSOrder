@@ -27,7 +27,7 @@ import com.macys.macysorder.service.UpdateOrderService;
 //@WebMvcTest(OrderController.class)
 @AutoConfigureMockMvc
 @SpringBootTest
-class MACYSOrderControllerTests {
+class MACYSOrderControllerTest {
 	
 	@MockBean
     UpdateOrderService orderMessageService;
