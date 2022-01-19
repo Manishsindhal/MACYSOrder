@@ -23,9 +23,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.macys.macysorder.dto.UpdateOrderStatusRequest;
 import com.macys.macysorder.service.UpdateOrderService;
 
-//@ExtendWith(SpringExtension.class)
-//@SpringBootTest
-//@AutoConfigureMockMvc
 
 //@RunWith(SpringRunner.class)
 //@WebMvcTest(OrderController.class)
@@ -43,12 +40,14 @@ public class MACYSOrderControllerTest {
 	public MACYSOrderControllerTest() {
 		
 	}
+	
 
 	@Test
     void testUpdateOrderStatus() throws Exception {
 		
 		//OrderMessageService orderMessageService = mock(OrderMessageService.class);
 		//UpdateOrderStatusRequest updateOrderStatusRequest = mock(UpdateOrderStatusRequest.class);
+		
 		UpdateOrderStatusRequest updateOrderStatusRequest = new UpdateOrderStatusRequest();
 		
 		when(orderMessageService.updateOrder(updateOrderStatusRequest)).thenReturn(new ResponseEntity<>(true, HttpStatus.OK));
